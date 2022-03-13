@@ -1,0 +1,110 @@
+html, body {
+    background-color: #4B5C70;
+    height: 100%;
+    font-family: Oswald,sans-serif !important;
+}
+
+.container-md, .container-fluid {
+    background-color: #F2F2F2;
+    padding: 0;
+}
+
+.carousel-control-prev, .carousel-control-next {
+    background-color: grey;
+    opacity: 0;
+}
+
+.carousel-control-prev:hover, .carousel-control-next:hover {
+    background-color: grey;
+    opacity: 0.5;
+}
+
+@media screen and (min-width: 720px) {
+    img {
+        height: 20vw;
+    }
+}
+
+@media screen and (max-width: 720px) {
+    img {
+        height: 70vw;
+    }
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    width: 100%;
+    background-color: #f1f1f1;
+}
+
+.progress-container {
+    width: 100%;
+    height: 8px;
+    background: #ccc;
+}
+
+.progress-bar {
+    height: 8px;
+    background: #4B5C70;
+    width: 0%;
+}
+
+.spBox {
+    margin: 0 15vw;
+}
+.fadeIO {
+    margin: 10px;
+    padding: 10px;
+    opacity: 1;
+    width: 40%;
+}
+
+.navbar-light {
+    background-color: #599DF0 !important;
+}
+
+a.nav-link {
+    color: #FFFFFF !important;
+}
+
+footer {
+    background-color: #599DF0;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 1.5vw;
+    padding: 1%;
+}
+
+.name {
+    background-color: #599DF0 !important;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 1.5vw;
+    padding: 1vw
+}
+
+.navbar {
+    flex-wrap: wrap !important;
+    justify-content: center !important;
+    font-size: 1.5vw;
+}
+
+.info {
+    display: flex;
+    justify-content: center;
+}
+
+#dates, #programs {
+    width: 50%;
+    padding: 1vw;
+}
+
+#welcome {
+    padding: 1vw;
+}
+
+h1 {
+    color: #01ADDB
+}
