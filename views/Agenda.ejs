@@ -69,7 +69,7 @@
 
     <!-- main -->
         <!-- Agenda area -->
-    <section class="agenda section_padding_130" data-aos="fade-up">
+    <section class="timeline_area section_padding_130" data-aos="fade-up">
       <div class="container">
           <div class="row justify-content-left">
               <div class="col-12 col-sm-8 col-lg-6">
@@ -87,7 +87,7 @@
 
                       <div class="agenda-content">
                         <div class="agenda-time">
-                          <h6 class="agenda-text">10:00 - 10:05</h6>
+                          <h6 class="agenda-text"><%= hour %>:<%= minute >= 10 ? '' : '0'%><%= minute %> - <%= hour + Math.floor((minute + 5) / 60) %>:<%= (minute + 5) % 60 >= 10 ? '' : '0' %><%= (minute + 5) % 60 %></h6>
                         </div>
 
                         <div class="agenda-activity">
@@ -101,7 +101,7 @@
                       <div class="">
                       <div class="agenda-content">
                         <div class="agenda-time">
-                          <h6 class="agenda-text">10:05 - 10:15</h6>
+                          <h6 class="agenda-text"><%= hour + Math.floor((minute + 5) / 60) %>:<%= (minute + 5) % 60 >= 10 ? '' : '0' %><%= (minute + 5) % 60 %> - <%= hour + Math.floor((minute + 15) / 60) %>:<%= (minute + 15) % 60 >= 10 ? '' : '0' %><%= (minute + 15) % 60 %></h6>
                         </div>
 
                         <div class="agenda-activity">
@@ -116,7 +116,7 @@
 
                       <div class="agenda-content">
                         <div class="agenda-time">
-                          <h6 class="agenda-text">10:15 - 10:20</h6>
+                          <h6 class="agenda-text"><%= hour + Math.floor((minute + 15) / 60) %>:<%= (minute + 15) % 60 >= 10 ? '' : '0' %><%= (minute + 15) % 60 %> - <%= hour + Math.floor((minute + 20) / 60) %>:<%= (minute + 20) % 60 >= 10 ? '' : '0' %><%= (minute + 20) % 60 %></h6>
                         </div>
 
                         <div class="agenda-activity">
@@ -130,7 +130,7 @@
 
                       <div class="agenda-content">
                         <div class="agenda-time">
-                          <h6 class="agenda-text">10:20 - 10:25</h6>
+                          <h6 class="agenda-text"><%= hour + Math.floor((minute + 20) / 60) %>:<%= (minute + 20) % 60 >= 10 ? '' : '0' %><%= (minute + 20) % 60 %> - <%= hour + Math.floor((minute + 25) / 60) %>:<%= (minute + 25) % 60 >= 10 ? '' : '0' %><%= (minute + 25) % 60 %></h6>
                         </div>
 
                         <div class="agenda-activity">
@@ -144,7 +144,7 @@
 
                       <div class="agenda-content">
                         <div class="agenda-time">
-                          <h6 class="agenda-text">10:25 - 10:30</h6>
+                          <h6 class="agenda-text"><%= hour + Math.floor((minute + 25) / 60) %>:<%= (minute + 25) % 60 >= 10 ? '' : '0' %><%= (minute + 25) % 60 %> - <%= hour + Math.floor((minute + 30) / 60) %>:<%= (minute + 30) % 60 >= 10 ? '' : '0' %><%= (minute + 30) % 60 %></h6>
                         </div>
 
                         <div class="agenda-activity">
@@ -158,7 +158,7 @@
 
                       <div class="agenda-content">
                         <div class="agenda-time">
-                          <h6 class="agenda-text">10:30 - 10:40</h6>
+                          <h6 class="agenda-text"><%= hour + Math.floor((minute + 30) / 60) %>:<%= (minute + 30) % 60 >= 10 ? '' : '0' %><%= (minute + 30) % 60 %> - <%= hour + Math.floor((minute + 40) / 60) %>:<%= (minute + 40) % 60 >= 10 ? '' : '0' %><%= (minute + 40) % 60 %></h6>
                         </div>
 
                         <div class="agenda-activity">
@@ -172,7 +172,7 @@
 
                       <div class="agenda-content">
                         <div class="agenda-time">
-                          <h6 class="agenda-text">10:40 - 10:45</h6>
+                          <h6 class="agenda-text"><%= hour + Math.floor((minute + 40) / 60) %>:<%= (minute + 40) % 60 >= 10 ? '' : '0' %><%= (minute + 40) % 60 %> - <%= hour + Math.floor((minute + 45) / 60) %>:<%= (minute + 45) % 60 >= 10 ? '' : '0' %><%= (minute + 45) % 60 %></h6>
                         </div>
 
                         <div class="agenda-activity">
@@ -186,7 +186,7 @@
 
                       <div class="agenda-content">
                         <div class="agenda-time">
-                          <h6 class="agenda-text">10:45 - 10:55</h6>
+                          <h6 class="agenda-text"><%= hour + Math.floor((minute + 45) / 60) %>:<%= (minute + 45) % 60 >= 10 ? '' : '0' %><%= (minute + 45) % 60 %> - <%= hour + Math.floor((minute + 55) / 60) %>:<%= (minute + 55) % 60 >= 10 ? '' : '0' %><%= (minute + 55) % 60 %></h6>
                         </div>
 
                         <div class="agenda-activity">
@@ -199,7 +199,7 @@
 
                       <div class="agenda-content">
                         <div class="agenda-time">
-                          <h6 class="agenda-text">10:55 - 11:25</h6>
+                          <h6 class="agenda-text"><%= hour + Math.floor((minute + 55) / 60) %>:<%= (minute + 55) % 60 >= 10 ? '' : '0' %><%= (minute + 55) % 60 %> - <%= hour + Math.floor((minute + 85) / 60) %>:<%= (minute + 85) % 60 >= 10 ? '' : '0' %><%= (minute + 85) % 60 %></h6>
                         </div>
 
                         <div class="agenda-activity">
@@ -212,7 +212,7 @@
 
                       <div class="agenda-content">
                         <div class="agenda-time">
-                          <h6 class="agenda-text">11:25 - 12:25</h6>
+                          <h6 class="agenda-text"><%= hour + Math.floor((minute + 85) / 60) %>:<%= (minute + 85) % 60 >= 10 ? '' : '0' %><%= (minute + 85) % 60 %> - <%= hour + Math.floor((minute + 145) / 60) %>:<%= (minute + 145) % 60 >= 10 ? '' : '0' %><%= (minute + 145) % 60 %></h6>
                         </div>
 
                         <div class="agenda-activity">
@@ -226,7 +226,7 @@
 
                       <div class="agenda-content">
                         <div class="agenda-time">
-                          <h6 class="agenda-text">12:25 - 12:30</h6>
+                          <h6 class="agenda-text"><%= hour + Math.floor((minute + 145) / 60) %>:<%= (minute + 145) % 60 >= 10 ? '' : '0' %><%= (minute + 145) % 60 %> - <%= hour + Math.floor((minute + 150) / 60) %>:<%= (minute + 150) % 60 >= 10 ? '' : '0' %><%= (minute + 150) % 60 %></h6>
                         </div>
 
                         <div class="agenda-activity">
