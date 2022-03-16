@@ -294,3 +294,52 @@
     color: rgb(124, 124, 124);
     text-decoration: underline;
 }
+/* 
+----------------------- About Page --------------------------------
+*/
+.scope{
+    padding: 50px 0;
+}
+.scope .s-box{
+    background: rgb(174,215,238);
+background: linear-gradient(90deg, rgba(174,215,238,1) 0%, rgba(146,185,231,1) 100%);
+    border-radius: 20px;
+    padding: 10px;
+    margin: 20px 0;
+    min-height: 115px;
+}
+.scope .s-box:hover{
+    background: rgb(118,190,255);
+background: linear-gradient(90deg, rgba(118,190,255,1) 0%, rgba(75,142,222,1) 50%, rgba(68,163,255,1) 100%);
+cursor: pointer;
+}
+.scope .s-box .hash{
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    background: rgb(238, 249, 255);
+    padding: 3px;
+    color:#222;
+    border-radius: 50%;
+}
+.scope .s-box .content{
+    font-weight: bold;
+    padding: 10px 20px;
+    color:#222;
+}
+.scope .s-box:hover .content{
+    color:#fff;
+}
+.sponsors{
+    margin: 40px 0;
+}
+.sponsors .row{
+    text-align: center;
+}
+.sponsors .img-box{
+    padding: 20px;
+}
+.sponsors span{
+    font-weight: bold;
+    color: rgb(131, 131, 131);
+}
