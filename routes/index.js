@@ -26,4 +26,8 @@ router.get('/Sponsers', function(req, res, next) {
   res.render('Sponsers');
 });
 
+router.get('/Registration', function(req, res, next) {
+  res.render('Registration');
+});
+
 module.exports = router;
