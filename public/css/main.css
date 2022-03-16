@@ -12,11 +12,7 @@
     border-bottom: 1px solid rgb(153, 153, 153);
     padding: 5px 0;
 }
-.top-header .links .link{
-    padding: 10px 15px;
-    color: rgb(153, 153, 153);
-    text-decoration: none;
-}
+
 /* Main header */
 .main-header{
     padding: 20px 0;
@@ -288,4 +284,13 @@
 .footer span{
     color:#fff;
     font-size: 0.8em;
+}
+.footer .links .link{
+    padding: 10px 15px;
+    color: rgb(153, 153, 153);
+    text-decoration: none;
+}
+.footer .links .link:hover{
+    color: rgb(124, 124, 124);
+    text-decoration: underline;
 }

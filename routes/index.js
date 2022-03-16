@@ -10,16 +10,16 @@ router.get('/About', function(req, res, next) {
   res.render('About');
 });
 
+router.get('/Agenda', function(req, res, next) {
+  res.render('Agenda');
+});
+
 router.get('/Topics', function(req, res, next) {
   res.render('Topics');
 });
 
 router.get('/Structure', function(req, res, next) {
   res.render('Structure');
-});
-
-router.get('/Steering-Committee', function(req, res, next) {
-  res.render('Steering-Committee');
 });
 
 router.get('/Sponsers', function(req, res, next) {
