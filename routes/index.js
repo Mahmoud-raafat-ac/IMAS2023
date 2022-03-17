@@ -11,7 +11,7 @@ router.get('/About', function(req, res, next) {
 });
 
 router.get('/Agenda', function(req, res, next) {
-  res.render('Agenda');
+  res.render('Agenda', {hour: 9, minute: 30});
 });
 
 router.get('/Topics', function(req, res, next) {
