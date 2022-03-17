@@ -10,6 +10,13 @@
     <link rel="stylesheet" href="css/main.css">
     <link rel="icon" href="imgs/logo/fav.png">
     <title>IMAS 2023</title>
+    <style>
+        h2{
+            margin-top: 50px;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+    </style>
 </head>
 <body>
     <!-- main header -->
@@ -43,7 +50,134 @@
     <!-- /header-menu -->
 
     <!-- main -->
-        <p>.....................................................<br>.....................................................<br>.....................................................<br></p>
+    <div style="margin-bottom: 200px" class="container">
+        <h2>Oversight Committee</h2>
+        <table class="table">
+            <thead class="thead-dark">
+            <tr>
+                <th scope="col">#</th>
+                <th scope="col">Name</th>
+                <th scope="col">Email</th>
+                <th scope="col">Role</th>
+            </tr>
+            </thead>
+            <tbody>
+            <%for(let i = 0;i<over.length;i++){%>
+            <tr>
+                <th scope="row"><%=i+1%></th>
+                <td><%=over[i].name%></td>
+                <td><%=over[i].email%></td>
+                <td><%=over[i].role%></td>
+            </tr>
+            <%}%>
+            </tbody>
+        </table>
+        <h2>Steering Committee</h2>
+        <table class="table">
+            <thead class="thead-dark">
+            <tr>
+                <th scope="col">#</th>
+                <th scope="col">Name</th>
+                <th scope="col">Role</th>
+            </tr>
+            </thead>
+            <tbody>
+            <%for(let i = 0;i<steering.length;i++){%>
+            <tr>
+                <th scope="row"><%=i+1%></th>
+                <td><%=steering[i].name%></td>
+                <td><%=steering[i].role%></td>
+            </tr>
+            <%}%>
+            </tbody>
+        </table>
+        <h2>Organizing Committee </h2>
+        <table class="table">
+            <thead class="thead-dark">
+            <tr>
+                <th scope="col">#</th>
+                <th scope="col">Name</th>
+                <th scope="col">Role</th>
+            </tr>
+            </thead>
+            <tbody>
+            <%for(let i = 0;i<organizing.length;i++){%>
+            <tr>
+                <th scope="row"><%=i+1%></th>
+                <td><%=organizing[i].name%></td>
+                <td><%=organizing[i].role%></td>
+            </tr>
+            <%}%>
+            </tbody>
+        </table>
+
+        <h2>Finance Committee </h2>
+        <table class="table">
+            <thead class="thead-dark">
+            <tr>
+                <th scope="col">#</th>
+                <th scope="col">Name</th>
+                <th scope="col">Role</th>
+            </tr>
+            </thead>
+            <tbody>
+            <%for(let i = 0;i<finance.length;i++){%>
+            <tr>
+                <th scope="row"><%=i+1%></th>
+                <td><%=finance[i].name%></td>
+                <td><%=finance[i].role%></td>
+            </tr>
+            <%}%>
+            </tbody>
+        </table>
+
+        <h2>Workshops, Tutorials, special sessions & Exhibition
+        </h2>
+        <table class="table">
+            <thead class="thead-dark">
+            <tr>
+                <th scope="col">#</th>
+                <th scope="col">Name</th>
+                <th scope="col">Role</th>
+            </tr>
+            </thead>
+            <tbody>
+            <%for(let i = 0;i<workshops.length;i++){%>
+            <tr>
+                <th scope="row"><%=i+1%></th>
+                <td><%=workshops[i].name%></td>
+                <td><%=workshops[i].role%></td>
+            </tr>
+            <%}%>
+            </tbody>
+        </table>
+
+        <h2>Women in Eng. Group</h2>
+        <table class="table">
+            <thead class="thead-dark">
+            <tr>
+                <th scope="col">#</th>
+                <th scope="col">Name</th>
+                <th scope="col">Role</th>
+            </tr>
+            </thead>
+            <tbody>
+            <%for(let i = 0;i<women.length;i++){%>
+            <tr>
+                <th scope="row"><%=i+1%></th>
+                <td><%=women[i].name%></td>
+                <td><%=women[i].role%></td>
+            </tr>
+            <%}%>
+            </tbody>
+        </table>
+    </div>
+
+
+
+
+
+
     <!-- /main -->
 
     <!-- Footer -->
