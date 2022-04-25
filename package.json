@@ -13,5 +13,17 @@
     "http-errors": "~1.6.3",
     "morgan": "~1.9.1",
     "nodemon": "^2.0.15"
-  }
+  },
+  "main": "app.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Mahmoud-raafat-ac/website.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Mahmoud-raafat-ac/website/issues"
+  },
+  "homepage": "https://github.com/Mahmoud-raafat-ac/website#readme",
+  "description": ""
 }

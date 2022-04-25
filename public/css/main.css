@@ -21,12 +21,12 @@
     text-align: center;
 }
 .main-header .brand img{
-    width: 250px;
+    width: 150px;
 }
 /* Menu header */
 .header-menu{
-    background: rgb(24,118,203);
-    background: linear-gradient(90deg, rgba(24,118,203,1) 0%, rgba(55,92,200,1) 23%, rgba(0,78,153,1) 100%);
+    background: #FFA827;
+    background: linear-gradient(90deg, #FFA827 0%, #eb9310 23%, #b06f0d 100%);
     text-align: center;
 }
 .header-menu .links .link{
@@ -54,7 +54,7 @@
     color: rgb(94, 94, 94);
 }
 .main-sec .sec-body .text-after{
-    color: rgb(0, 162, 255);
+    color: #FFA827;
     font-weight: bold;
 }
 .main-sec .event-img img{
@@ -65,8 +65,8 @@
     padding: 20px 0;
 }
 .main-sec .btn-ieee{
-    background: rgb(24,118,203);
-    background: linear-gradient(144deg, rgba(24,118,203,1) 0%, rgba(55,92,200,1) 23%, rgba(0,78,153,1) 100%);
+    background: #FFA827;
+    background: linear-gradient(144deg, #FFA827 0%, #d88912 23%, #e69010 100%);
     border-radius: 30px;
     padding: 10px 20px;
     color: #fff;
@@ -96,7 +96,7 @@
     width: 200px;
     z-index: -1;
     opacity: .8;
-    background-color: rgb(0, 183, 255);
+    background-color: #FFA827;
 }
 .timeline_area {
     position: relative;
@@ -152,7 +152,7 @@
     width: 11px;
     height: 11px;
     border-radius: 50%;
-    background-color: rgb(47, 91, 234);
+    background-color: #FFA827;
     content: "";
     top: 50%;
     right: 26px;
@@ -187,7 +187,7 @@
     transition-duration: 500ms;
     width: 30px;
     height: 30px;
-    background-color: rgb(47, 91, 234);
+    background-color: #6C4009;
     -webkit-box-flex: 0;
     -ms-flex: 0 0 30px;
     flex: 0 0 30px;
@@ -214,7 +214,7 @@
 }
 .single-timeline-area .single-timeline-content:hover .timeline-text h6,
 .single-timeline-area .single-timeline-content:focus .timeline-text h6 {
-    color: #3f43fd;
+    color: #6C4009;
 }
 /* About */
 .about{
@@ -235,8 +235,8 @@
     width: 400px;
     clip-path: polygon(0% 0%, 0% 100%, 25% 100%, 25% 25%, 75% 25%, 75% 75%, 25% 75%, 25% 100%, 100% 100%, 100% 0%);
     position: absolute;
-    background: rgb(118,190,255);
-    background-image: linear-gradient(90deg, rgba(118,190,255,.9) 0%, rgba(75,142,222,.9) 23%, rgba(68,163,255,.9) 100%),url('../imgs/a.jpg');
+    background: #FFA827;
+    background-image: linear-gradient(90deg, rgba(109, 64, 9, 0.9) 0%, rgba(255, 169, 39, 0.8) 80%, #FFA827 100%),url('../imgs/a.jpg');
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
@@ -276,8 +276,8 @@
 }
 /* Footer */
 .footer{
-    background: rgb(24,118,203);
-    background: linear-gradient(90deg, rgba(24,118,203,1) 0%, rgba(55,92,200,1) 23%, rgba(0,78,153,1) 100%);
+    background: #FFA827;
+    background: linear-gradient(90deg, #FFA827 0%, #eb9310 23%, #b06f0d 100%);
     text-align: center;
     padding: 10px 0;
 }
@@ -287,7 +287,7 @@
 }
 .footer .links .link{
     padding: 10px 15px;
-    color: rgb(153, 153, 153);
+    color: rgb(36, 36, 36);
     text-decoration: none;
 }
 .footer .links .link:hover{
@@ -301,17 +301,17 @@
     padding: 50px 0;
 }
 .scope .s-box{
-    background: rgb(174,215,238);
-background: linear-gradient(90deg, rgba(174,215,238,1) 0%, rgba(146,185,231,1) 100%);
+    background: #ffe8c5;
+background: linear-gradient(90deg, #ffe8c5 0%, #fbcd87 100%);
     border-radius: 20px;
     padding: 10px;
     margin: 20px 0;
     min-height: 115px;
 }
 .scope .s-box:hover{
-    background: rgb(118,190,255);
-background: linear-gradient(90deg, rgba(118,190,255,1) 0%, rgba(75,142,222,1) 50%, rgba(68,163,255,1) 100%);
-cursor: pointer;
+    background: #FFA827;
+    background: linear-gradient(90deg, #FFA827 0%, #e88b00 50%, #b86f00 100%);
+    cursor: pointer;
 }
 .scope .s-box .hash{
     width: 30px;
@@ -342,4 +342,25 @@ cursor: pointer;
 .sponsors span{
     font-weight: bold;
     color: rgb(131, 131, 131);
+}
+.text-header-logo{
+    display: inline-block;
+    text-align: left;
+    vertical-align: middle;
+    border-left: 1px solid #222;
+    margin-left: 10px;
+    padding-left: 20px;
+}
+.brand{
+    display: inline-block;
+}
+.header-logo{
+    text-align: center;
+}
+.ieee{
+    font-weight: bold;
+}
+.ieee, .imas{
+    font-size: 2em;
+    margin: 0;
 }
