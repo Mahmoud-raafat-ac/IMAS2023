@@ -1,5 +1,7 @@
 .htaccess
 
+data_ignored
+
 # modules file
 node_modules
 
