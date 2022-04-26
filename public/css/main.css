@@ -40,21 +40,32 @@ body{
 }
 /* Main section */
 
+.w-100 {
+    width: 100%!important;
+    height: 750px;
+}
+
+.main-sec .container{
+    background: rgb(0 0 0 / 18%);
+    border-radius: 5px;
+    padding: 20px;
+}
+
 .main-sec{
     margin: 20px 0;
     padding: 30px 0;
  z-index: 2;
     position: absolute;
     top:50%;
-    left: 10%;
-    width: 100%;
+    left: 24%;
+    width: 55%;
 }
 
 .carousel{
     z-index: 1;
     position: relative;
     background-color: #333333;
-    opacity: 0.66;
+    opacity: 0.46;
 }
 
 .carousel-item {
@@ -71,6 +82,17 @@ body{
     padding: 10px 0;
 }
 
+.sec-body span {
+    animation: type 8s infinite;
+    animation-delay: 3s;
+    white-space:nowrap;
+    overflow:hidden;
+    font-family: monospace;
+}
+@keyframes type {
+    from { width: 0; }
+    to { width:700px; }
+ }
 .main-sec .sec-body .text-header{
     font-weight: bold;
     font-size:25px;
@@ -78,10 +100,6 @@ body{
 }
 .main-sec .sec-body .text-content{
     color: #000000;
-}
-.main-sec .sec-body .text-after{
-    color: #000000;
-    font-weight: bold;
 }
 .main-sec .event-img img{
     width: 100%;
@@ -98,11 +116,6 @@ body{
     color: #fff;
     font-weight: bold;
 }
-.main-sec .partners img{
-    width: 150px;
-    padding: 15px;
-}
-
 /* Timeline */
 .timeline_area.section_padding_130 .section_heading h3,h3.title{
     font-weight: bold;
