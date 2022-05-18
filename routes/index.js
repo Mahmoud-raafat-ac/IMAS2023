@@ -27,40 +27,40 @@ router.get('/Structure', function(req, res, next) {
     },
     {
       "name": "Alaa Abunjaileh",
-      "email": "abnjlh@gmail.com",
+      "email": "-",
       "role": "Member"
     },
     {
       "name": "Ali Darwish",
-      "email": "darwish@alum.mit.edu",
+      "email": "-",
       "role": "Member"
     },
     {
       "name": "Hadia El Hennawy",
-      "email": " helhennawy@ieee.org",
+      "email": " -",
       "role": "Member"
     },
     {
       "name": "Abdel Razik Sebak ",
-      "email": "abdo@ece.concordia.ca",
+      "email": "-",
       "role": "Member"
     },
 
     {
       "name": "Imran Mehdi",
-      "email": "imran.mehdi@jpl.nasa.gov",
+      "email": "-",
       "role": "Member"
     },
 
     {
       "name": "Georg Ponchak",
-      "email": "george.ponchak@ieee.org",
+      "email": "-",
       "role": "Member"
     },
 
     {
       "name": "Yahia Antar",
-      "email": "antar-y@rmc.ca",
+      "email": "-",
       "role": "Member"
     }
   ]

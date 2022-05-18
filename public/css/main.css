@@ -17,14 +17,11 @@ body{
 }
 
 /* Main header */
-.main-header{
-    padding: 20px 0;
-}
-.main-header .brand{
-    text-align: center;
-}
-.main-header .brand img{
-    width: 150px;
+.bg{
+    height: 20vh;
+    background-image: url(../imgs/header.png);
+    background-repeat:no-repeat;
+    background-size: cover;
 }
 /* Menu header */
 .header-menu{
@@ -46,6 +43,7 @@ body{
 }
 
 .main-sec .container{
+    width: 105vh;
     background: rgb(0 0 0 / 18%);
     border-radius: 5px;
     padding: 20px;
@@ -83,8 +81,8 @@ body{
 }
 
 .sec-body span {
-    animation: type 8s infinite;
-    animation-delay: 3s;
+    /* animation: type 8s infinite;
+    animation-delay: 3s; */
     white-space:nowrap;
     overflow:hidden;
     font-family: monospace;
