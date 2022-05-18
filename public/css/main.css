@@ -348,10 +348,9 @@ background: linear-gradient(90deg, #ffe8c5 0%, #fbcd87 100%);
 .scope .s-box:hover{
     background: #FFA827;
     background: linear-gradient(90deg, #FFA827 0%, #e88b00 50%, #b86f00 100%);
-    cursor: pointer;
 }
 .scope .s-box .hash{
-    width: 30px;
+    width: 60px;
     height: 30px;
     text-align: center;
     background: rgb(238, 249, 255);
