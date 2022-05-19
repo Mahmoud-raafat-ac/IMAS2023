@@ -503,6 +503,8 @@ router.get('/country', function(req, res, next) {
   res.render('country');
 });
 
+
+
 router.get('/Registration', function(req, res, next) {
   res.render('Registration');
 });

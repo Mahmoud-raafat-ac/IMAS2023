@@ -9,28 +9,65 @@
     <link rel="stylesheet" href="css/aos.css">
     <link rel="stylesheet" href="css/main.css">
     <link rel="icon" href="imgs/logo/logo.png">
+    <link rel="stylesheet" href="css/hover-min.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+
     <title>IMAS 2023</title>
 </head>
 <body>
+  <div class="fixed-menu">
+    <div class="fixed-links">
+      <div class="close">
+        <i class="fa-solid fa-xmark"></i>
+      </div>
+      <a href="/" class="link">Home</a>
+      <a href="/About" class="link">About</a>
+      <a href="/Agenda" class="link">Agenda</a>
+      <a href="/Topics" class="link">Topics</a>
+      <a href="/Structure" class="link">Structure</a>
+      <a href="/Sponsers" class="link">Sponsers</a>
+      <a href="/Country" class="link">Country</a>
+      <button class="btn btn-ieee" onclick="window.open('CFP.pdf', '_blank')">Download CFP</button>
+    </div>
+  </div>
     <!-- main header -->
-    <div class="bg"></div>
-    <!-- /main-header -->
-
-    <!-- header-menu -->
-    <div class="container-fluid header-menu">
-      <div class="container">
-        <div class="links">
-          <a href="/" class="link">Home</a>
-          <a href="/About" class="link">About</a>
-          <a href="/Agenda" class="link">Agenda</a>
-          <a href="/Topics" class="link">Topics</a>
-          <a href="/Structure" class="link">Structure</a>
-          <a href="/Sponsers" class="link">Sponsers</a>
-          <a href="/Country" class="link">Country</a>
+    <div id="carouselExampleCaptions" class="header-other" data-ride="carousel">
+      <div class="carousel-inner">
+        
+        <div class="header-body">
+          <div class="container-fluid header-new">
+            <div>
+              <div class="row">
+                <div class="col-sm-2 col-6">
+                  <div class="brand">
+                    <img src="/imgs/logo/logo.png">
+                  </div>
+                </div>
+                <div class="col-sm-10 col-6">
+                  <div class="links">
+                    <a href="/" class="link hvr-overline-from-center">Home</a>
+                    <a href="/About" class="link hvr-overline-from-center">About</a>
+                    <a href="/Agenda" class="link hvr-overline-from-center">Agenda</a>
+                    <a href="/Topics" class="link hvr-overline-from-center">Topics</a>
+                    <a href="/Structure" class="link hvr-overline-from-center">Structure</a>
+                    <a href="/Sponsers" class="link hvr-overline-from-center">Sponsers</a>
+                    <a href="/Country" class="link hvr-overline-from-center">Country</a>
+                    <button class="btn btn-ieee" onclick="window.open('CFP.pdf', '_blank')">Download CFP</button>
+                  </div>
+                  <div class="to-links">
+                    <div class="to-links-box">
+                      <i class="fa-solid fa-bars"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
+      </button>
     </div>
-    <!-- /header-menu -->
+
 
     <!-- main -->
     
@@ -120,6 +157,16 @@
       <script src="js/aos.js"></script>
       <script>
         AOS.init();
+
+        
+        $('.close').click(function(){
+          $('.fixed-menu').removeClass('d-block');
+        });
+
+        $('.to-links-box').click(function(){
+          $('.fixed-menu').addClass('d-block');
+        });
+
       </script>
   </body>
   </html>
