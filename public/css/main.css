@@ -81,8 +81,8 @@ body{
 }
 
 .sec-body span {
-    /* animation: type 8s infinite;
-    animation-delay: 3s; */
+    animation: type 8s infinite;
+    animation-delay: 3s;
     white-space:nowrap;
     overflow:hidden;
     font-family: monospace;
@@ -399,4 +399,20 @@ background: linear-gradient(90deg, #ffe8c5 0%, #fbcd87 100%);
 .ieee, .imas{
     font-size: 2em;
     margin: 0;
+}
+/* country */
+.country-img{
+    width: 29vw;
+    height: 26vh;
+    margin: 5px 0px 0px 6vw;
+}
+.country-img2{
+    width: 29vw;
+    height: 26vh;
+    margin: 5px 0px 0px 6vw;
+}
+.country-img3{
+    width: 29vw;
+    height: 26vh;
+    margin: 5px 0px 0px 6vw;
 }
