@@ -564,7 +564,7 @@ body{
     left: 10%;
     right: 20%;
     box-shadow: #727272bd 51px 5px 80px;
-    background-image: linear-gradient(90deg, #b06f0d38 0%, #eb93103b 23%, #ffa927cf 100%),url('../imgs/country/guc1.jpeg');
+    background-image: linear-gradient(90deg, #b06f0d38 0%, #eb93103b 23%, #ffa927cf 100%),url('../imgs/country/guc2.jpeg');
     min-height: 40vh;
     background-repeat: no-repeat;
     background-size: cover;
@@ -576,7 +576,7 @@ body{
     left: 50%;
     right: 0%;
     box-shadow: #727272bd 51px 5px 80px;
-    background-image: linear-gradient(90deg, #5d3c0ab1 0%, #4e31067f 23%, #51350cd8 100%),url('../imgs/country/guc3.jpeg');
+    background-image: linear-gradient(90deg, #5d3c0ab1 0%, #4e31067f 23%, #51350cd8 100%),url('../imgs/country/guc1.jpeg');
     background-repeat: no-repeat;
     min-height: 30vh;
     background-size: cover;
