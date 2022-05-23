@@ -18,7 +18,7 @@ router.get('/Topics', function(req, res, next) {
   res.render('Topics');
 });
 
-router.get('/Structure', function(req, res, next) {
+router.get('/Committees', function(req, res, next) {
   let oversight = [
     {
       "name": "Samir El-Ghazaly",
@@ -485,7 +485,7 @@ router.get('/Structure', function(req, res, next) {
       "role": "GUC"
     },
   ]
-  res.render('Structure', {over: oversight,
+  res.render('Committees', {over: oversight,
     steering:steering,
     organizing:organizing,
     finance:finance,
