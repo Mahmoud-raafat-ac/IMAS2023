@@ -51,7 +51,7 @@
       <a href="/Topics" class="link">Topics</a>
       <a href="/Committees" class="link">Committees</a>
       <a href="/Sponsers" class="link">Sponsers</a>
-      <a href="/Country" class="link">Country</a>
+      <a href="/Venue" class="link">Venue</a>
       <button class="btn btn-ieee" onclick="window.open('CFP.pdf', '_blank')">Download CFP</button>
     </div>
   </div>
@@ -76,7 +76,7 @@
                     <a href="/Topics" class="link hvr-overline-from-center">Topics</a>
                     <a href="/Committees" class="link hvr-overline-from-center">Committees</a>
                     <a href="/Sponsers" class="link hvr-overline-from-center">Sponsers</a>
-                    <a href="/Country" class="link hvr-overline-from-center">Country</a>
+                    <a href="/Venue" class="link hvr-overline-from-center">Venue</a>
                     <button class="btn btn-ieee" onclick="window.open('CFP.pdf', '_blank')">Download CFP</button>
                   </div>
                   <div class="to-links">

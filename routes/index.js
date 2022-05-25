@@ -10,9 +10,9 @@ router.get('/About', function(req, res, next) {
   res.render('About');
 });
 
-router.get('/Agenda', function(req, res, next) {
-  res.render('Agenda', {hour: 9, minute: 30});
-});
+// router.get('/Agenda', function(req, res, next) {
+//   res.render('Agenda', {hour: 9, minute: 30});
+// });
 
 router.get('/Topics', function(req, res, next) {
   res.render('Topics');
@@ -499,8 +499,8 @@ router.get('/Sponsers', function(req, res, next) {
   res.render('Sponsers');
 });
 
-router.get('/country', function(req, res, next) {
-  res.render('country');
+router.get('/Venue', function(req, res, next) {
+  res.render('Venue');
 });
 
 

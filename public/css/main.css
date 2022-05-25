@@ -69,6 +69,12 @@ body{
     color: #FFA827;
     background: #fff;
 }
+.header-new .links .btn-ieee:hover{
+    font-size: .9em;
+    font-weight: normal;
+    color: #FFF;
+    background: #FFA827;
+}
 .header-new .to-links .to-links-box{
     padding: 10px 16px;
     border-radius: 50%;
@@ -94,6 +100,9 @@ body{
     font-size: 3em;
     width: 60%;
     display: inline-block;
+}
+.text-content{
+    font-size: 1.2em;
 }
 .hvr-overline-from-center:before{
     background-color:#fff !important;
@@ -121,6 +130,12 @@ body{
     color:#6C4009;
     margin: 20px 0;
     background: #fff;
+
+}
+.fixed-links .btn-ieee:hover{
+    color:#fff;
+    margin: 20px 0;
+    background: #6C4009;
 
 }
 .fixed-links a:hover{
@@ -157,7 +172,7 @@ body{
     display: flex;
     position: relative;
     z-index: 5;
-    min-height: 80vh;
+    min-height: 100vh;
 }
 .header-other .header-body{
     min-height: 20vh;
@@ -247,7 +262,7 @@ body{
         color: #fff;
     }
     .header-body{
-        height: 100vh;
+        height: 113vh;
     }
     .header-other .header-body{
         height: auto;
@@ -411,17 +426,15 @@ body{
     margin: 50px 0;
 }
 .partners .row{
+    justify-content: center;
     text-align: center;
-}
-.partners .row .col-6{
-    height: 150px;
 }
 .partners img{
     padding: 20px 0;
     width: 40%;
 }
 .partners img.h{
-    width: 25%;
+    width: 30%;
 }
 .partners img.hs{
     width: 35%;
@@ -527,24 +540,8 @@ body{
     font-size: 2em;
     margin: 0;
 }
-/* country */
-.country-img{
-    width: 29vw;
-    height: 26vh;
-    margin: 5px 0px 0px 6vw;
-}
-.country-img2{
-    width: 29vw;
-    height: 26vh;
-    margin: 5px 0px 0px 6vw;
-}
-.country-img3{
-    width: 29vw;
-    height: 26vh;
-    margin: 5px 0px 0px 6vw;
-}
 /*
-    GUC Page
+    Venue
 */
 .image_box{
     border-radius: 10px;
@@ -564,7 +561,6 @@ body{
     left: 10%;
     right: 20%;
     box-shadow: #727272bd 51px 5px 80px;
-    background-image: linear-gradient(90deg, #b06f0d38 0%, #eb93103b 23%, #ffa927cf 100%),url('../imgs/country/guc2.jpeg');
     min-height: 40vh;
     background-repeat: no-repeat;
     background-size: cover;
@@ -576,13 +572,31 @@ body{
     left: 50%;
     right: 0%;
     box-shadow: #727272bd 51px 5px 80px;
-    background-image: linear-gradient(90deg, #5d3c0ab1 0%, #4e31067f 23%, #51350cd8 100%),url('../imgs/country/guc1.jpeg');
     background-repeat: no-repeat;
     min-height: 30vh;
     background-size: cover;
     z-index: 1;
 }
-.guc_img_rel{
+.guc_img_rel , .cairo_img_rel{
     position: relative;
-    min-height: 55vh;
+    min-height: 60vh;
+}
+.image_box.dom.cairo{
+    background-image: linear-gradient(90deg, #b06f0d38 0%, #eb93103b 23%, #ffa9277d 100%),url(../imgs/country/cairo1.jpg);
+    box-shadow: #727272bd -19px 20px 80px 6px;
+    left: 5%;
+    right: 28%;
+    z-index: 1;
+}
+.image_box.rec.cairo{
+    background-image: linear-gradient(90deg, #9f7e4c6e 0%, #6d481263 23%, #b77d28d8 100%),url(../imgs/country/cairo2.jpg);
+    box-shadow: #727272bd -20px 20px 80px 16px;
+    left: 40%;
+    right: 5%;
+}
+.image_box.dom.guc{
+    background-image: linear-gradient(90deg, #b06f0d38 0%, #eb93103b 23%, #ffa927cf 100%),url('../imgs/country/guc2.jpeg')
+}
+.image_box.rec.guc{
+    background-image: linear-gradient(90deg, #5d3c0ab1 0%, #4e31067f 23%, #51350cd8 100%),url('../imgs/country/guc1.jpeg');
 }
