@@ -6,6 +6,9 @@
     font-family: poppins;
     transition: .5s all;
 }
+.badge{
+    padding: .5em;
+}
 body{
     overflow-x: hidden;
 }
@@ -442,6 +445,78 @@ body{
 .partners img.w{
     margin-top: 20px;
     width: 45%;
+}
+.ieee-spons-cont{
+    margin-bottom: 2em;
+    padding-bottom: 40px;
+}
+.silv-spons-cont{
+    margin-bottom: 2em;
+    padding-bottom: 40px;
+}
+.bron-spons-cont{
+    margin-bottom: 2em;
+    padding-bottom: 40px;
+}
+.ieee-spon{
+    position: relative;
+}
+.ieee-spon::after{
+    content: "GOLD SPONSOR";
+    color:#fff;
+    position: absolute;
+    padding: 10px;
+    top:100%;
+    left: 0;
+    right: 0;
+    height: auto;
+    background: rgb(93,70,0);
+    background: linear-gradient(148deg, rgba(93,70,0,1) 0%, rgba(255,166,0,1) 49%, rgba(101,72,0,1) 100%);
+    clip-path: circle(50% at 50% 100%);
+    font-size: 1em;
+    font-weight: bold;
+
+
+}
+.silv-spon{
+    position: relative;
+}
+.silv-spon::after{
+    content: "SILVER SPONSOR";
+    color:#222;
+    position: absolute;
+    padding: 10px;
+    top:100%;
+    left: 0;
+    right: 0;
+    height: auto;
+    background: rgb(134,134,134);
+    background: linear-gradient(148deg, rgba(134,134,134,1) 0%, rgba(231,231,231,1) 49%, rgba(134,134,134,1) 100%);
+    clip-path: circle(50% at 50% 100%);
+    font-size: 1em;
+    font-weight: bold;
+
+
+}
+.bron-spon{
+    position: relative;
+}
+.bron-spon::after{
+    content: "BRONZE SPONSOR";
+    color:#fff;
+    position: absolute;
+    padding: 10px;
+    top:100%;
+    left: 0;
+    right: 0;
+    height: auto;
+    background: rgb(62,46,0);
+    background: linear-gradient(148deg, rgba(62,46,0,1) 0%, rgba(145,104,0,1) 49%, rgba(75,54,0,1) 100%);
+    clip-path: circle(50% at 50% 100%);
+    font-size: 1em;
+    font-weight: bold;
+
+
 }
 /* Footer */
 .footer{
