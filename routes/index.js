@@ -10,465 +10,134 @@ router.get('/About', function(req, res, next) {
   res.render('About');
 });
 
-// router.get('/Agenda', function(req, res, next) {
-//   res.render('Agenda', {hour: 9, minute: 30});
-// });
-
 router.get('/Topics', function(req, res, next) {
   res.render('Topics');
 });
 
 router.get('/Committees', function(req, res, next) {
-  let oversight = [
+  let steering = [
     {
-      "name": "Samir El-Ghazaly",
-      "email": "",
+      "name": "Prof. Samir El-Ghazali ",
       "role": "Chair"
     },
     {
-      "name": "Alaa Abunjaileh",
-      "email": "-",
+      "name": "Prof. Yahia Antar ",
       "role": "Member"
     },
     {
-      "name": "Ali Darwish",
-      "email": "-",
+      "name": "Prof. Othman Elsayed",
       "role": "Member"
     },
     {
-      "name": "Hadia El Hennawy",
-      "email": " -",
+      "name": "Prof. Diaa Khalil",
       "role": "Member"
     },
     {
-      "name": "Abdel Razik Sebak ",
-      "email": "-",
-      "role": "Member"
-    },
-
-    {
-      "name": "Imran Mehdi",
-      "email": "-",
-      "role": "Member"
-    },
-
-    {
-      "name": "Georg Ponchak",
-      "email": "-",
-      "role": "Member"
-    },
-
-    {
-      "name": "Yahia Antar",
-      "email": "-",
+      "name": "Prof. Tamer Abo Elfadl",
       "role": "Member"
     }
   ]
 
-  let steering = [
-
+  let Conference  = [
     {
-      "name": "Prof. Hadia El Hennawy",
-      "role": "Former Chair"
-    },
-    {
-      "name": "Prof. Diaa A. M. Khalil",
-      "role": "Former Chair"
-    },
-    {
-      "name": "Othman Lotfy Elsayed",
+      "name": "Prof. Ayman El-Tager",
       "role": "Former Chair"
     },
     {
       "name": "Prof. Ayman El-Tager",
-      "role": "Conference Co-Chair (MTT)"
-    },
-    {
-      "name": "Prof. Hany Hammad",
-      "role": "Conference Co-Chair (MTT)"
-    },
-    {
-      "name": "Prof. Samir Elghazaly",
-      "role": "Member"
-    },
-    {
-      "name": "Prof. Yahia Antar",
-      "role": "Member"
-    },
-    {
-      "name": "Prof. Esmat Abdalla",
-      "role": "Member"
-    },
-    {
-      "name": "Prof. Amr Safwat",
-      "role": "Member"
-    },
-    {
-      "name": "Prof. Tamer Abo Elfad",
-      "role": "Member"
-    },
+      "role": "Former Chair"
+    }
   ]
-  let organizing = [
-
+  
+  let TPC_Chairs = [
     {
-      "name": "Prof.Hany Hammad",
+      "name": "Prof. Hadia El-Hennawy",
       "role": "OCC & Conference Co-Chair"
     },
     {
-      "name": "Prof. Ashraf Mansour",
+      "name": "Prof. Amr Safwat",
       "role": "GUC University Chairman of the board of trustee"
-    },
-    {
-      "name": "Prof. Yasser Hegazy",
-      "role": "GUC University President"
-    },
-    {
-      "name": "Prof. Ahmed Mahdy ",
-      "role": "IET faculty Dean"
-    },
-    {
-      "name": "Prof. AbdelMagid Allam",
-      "role": "GUC Communication Department Head"
-    },
-    {
-      "name": "Assistant Prof. Yasmine Abdellah",
-      "role": "GIU (AP member"
-    },
-    {
-      "name": "Prof. Tallal El Shabrawy",
-      "role": ""
-    },
-    {
-      "name": "Prof. Frank Gunzer",
-      "role": ""
-    },
-    {
-      "name": "Assoc. Prof. Haitham Omran",
-      "role": ""
-    },
-    {
-      "name": "Assoc. Prof. Mohamed Abdel Ghani",
-      "role": ""
-    },
-    {
-      "name": "Assoc. Prof. Mohamed Abdel Ghani",
-      "role": ""
-    },
-    {
-      "name": "Assistant Prof. Mohamed Ashour",
-      "role": ""
-    },
-    {
-      "name": "Assistant Prof. Eman Azab",
-      "role": "Women In Eng. Member"
-    },
-    {
-      "name": "Assistant Prof. Maggie Mashaly",
-      "role": "Women In Eng. Member"
-    },
-    {
-      "name": "Assistant Prof. Minar Al-Aasser",
-      "role": "Women In Eng. Member"
-    },
-
-    {
-      "name": "Eng. Randa El Khosht ",
-      "role": "Teaching Assistants"
-    },
-    {
-      "name": "Eng.Maha ElFeshawy",
-      "role": "Teaching Assistants"
-    },
-    {
-      "name": "Eng.Hadil Hesham Eissawy",
-      "role": "Teaching Assistants"
-    },
-    {
-      "name": "Eng.Abdelrahman Moustafa Darwish",
-      "role": "Teaching Assistants"
-    },
-    {
-      "name": "Eng. Sondos Tarek Mohamed El Zeiny",
-      "role": "Teaching Assistants"
     }
   ]
-  let finance = [
+
+  let TPC_Members = [
     {
-      "name": "Prof. Ahmed Madian ",
+      "name": "Prof. Roberto D. Graglia",
       "role": "Chair of FC"
     },
     {
-      "name": "Prof. Ahmad Khatta",
+      "name": "Prof. Victor F. Hanna",
       "role": "Member"
     },
     {
-      "name": "Prof. Hany Hammad",
+      "name": "Prof. Rene Marklein",
+      "role": "Member"
+    },
+    {
+      "name": "Prof. Ahmad Kishk",
+      "role": "Member"
+    },
+    {
+      "name": "Prof. Kawthar Zaki",
+      "role": "Member"
+    },
+    {
+      "name": "Prof. Esmat Abdallah",
+      "role": "Member"
+    },
+    {
+      "name": "Prof. Sedky Riad",
+      "role": "Member"
+    },
+    {
+      "name": "Prof. Atef Elshrbeni",
+      "role": "Member"
+    },
+    {
+      "name": "Prof. Abbas Omar",
+      "role": "Member"
+    },
+    {
+      "name": "Prof. Abdel Razik Sebak  ",
+      "role": "Member"
+    },
+    {
+      "name": "Prof. Ali Darwish",
+      "role": "Member"
+    },
+    {
+      "name": "Prof. Islam Eshrah ",
+      "role": "Member"
+    },
+    {
+      "name": "Prof. Ezzeldin Soliman",
+      "role": "Member"
+    },
+    {
+      "name": "Prof. Matthys M. Botha",
+      "role": "Member"
+    },
+    {
+      "name": "Prof. Dirk I. L. de Villiers",
+      "role": "Member"
+    },
+    {
+      "name": "Prof. M. Gustafsson",
+      "role": "Member"
+    },
+    {
+      "name": "Prof. M. S. Sharawi",
       "role": "Member"
     },
   ]
-  let technical  = [
 
+  let G_Secretary  = [
     {
-      "name": "Prof. Hadia El Hennawy ",
+      "name": "Assoc. Prof. Hussein Kotb",
       "role": "TPC CoChair (AP)"
-    },
-    {
-
-      "name": "Prof. Amr Safwat",
-      "role": "TPC CoChair (MTT)"
-    },
-    {
-      "name": "Abbas Omar",
-      "role": "Member"
-    },
-    {
-      "name": "Abdel Razik Sebak",
-      "role": "Member"
-    },
-    {
-      "name": "Adel Abd Elrahman",
-      "role": "Member"
-    },
-    {
-      "name": " Ahmed Atteia",
-      "role": "Member"
-    },
-    {
-      "name": "Ahmed Khalil",
-      "role": "Member"
-    },
-    {
-      "name": "Ahmed Kishk",
-      "role": "Member"
-    },
-    {
-      "name": "Alaa Abunjaileh",
-      "role": "Member"
-    },
-    {
-      "name": "Alaa Hassan Kamel",
-      "role": "Member"
-    },
-    {
-      "name": "Ali Darwish",
-      "role": "Member"
-    },
-    {
-      "name": "Aly Fathy",
-      "role": "Member"
-    },
-    {
-      "name": "Amal El-Ghazaly ",
-      "role": "Member"
-    },
-    {
-      "name": "Amir Mortazawi",
-      "role": "Member"
-    },
-    {
-      "name": "Angie Eldamak",
-      "role": "Workshops, Tutorials & Exhibition"
-    },
-    {
-      "name": "Ashraf S. Mohra",
-      "role": "Member"
-    },
-    {
-      "name": "Atif El-Sherbini",
-      "role": "Member"
-    },
-    {
-      "name": "Ayman El-Tager",
-      "role": "Member"
-    },
-    {
-      "name": "Darwish A. Mohamed",
-      "role": "Member"
-    },
-    {
-      "name": "Diaa Khalil",
-      "role": "Co-Chair for Workshops, Tutorials & Exhibition"
-    },
-    {
-      "name": "Dylan Williams",
-      "role": "Member"
-    },
-    {
-      "name": "Ezzeldin Soliman",
-      "role": "Member"
-    },
-    {
-      "name": "Gamal Hegazi",
-      "role": "Member"
-    },
-    {
-      "name": "George Ponchak",
-      "role": "Workshops, Tutorials & Exhibition"
-    },
-    {
-      "name": "Goutam Chattopadhyay",
-      "role": "Member"
-    },
-    {
-      "name": "Hany Hammad",
-      "role": "Member"
-    },
-    {
-      "name": "Hend A. Malhat",
-      "role": "Member"
-    },
-    {
-      "name": "Hossam Shalaby",
-      "role": "Member"
-    },
-    {
-      "name": "Ibrahim Salem",
-      "role": "Workshops, Tutorials & Exhibition"
-    },
-    {
-      "name": "Imran Mehdi",
-      "role": "Member"
-    },
-    {
-      "name": "Islam Eshrah",
-      "role": "Member"
-    },
-    {
-      "name": "John Papapolymerou",
-      "role": "Member"
-    },
-    {
-      "name": "Kawthar Zaki",
-      "role": "Member"
-    },
-    {
-      "name": "Madhu Gupta ",
-      "role": "Member"
-    },
-    {
-
-      "name": "Magda El-Shenawee",
-      "role": "Member"
-    },
-    {
-      "name": "Magdy Salama",
-      "role": "Member"
-    },
-    {
-      "name": "Mahmoud Abdalla",
-      "role": "Member"
-    },
-    {
-      "name": "Malek Hussain",
-      "role": "Member"
-    },
-    {
-      "name": "Manos Tentizeris",
-      "role": "Member"
-    },
-    {
-      "name": "Mohamed Abouzahra",
-      "role": "Member"
-    },
-    {
-      "name": "Mohamed Salem",
-      "role": "Member"
-    },
-    {
-      "name": "Mona Hella",
-      "role": "Member"
-    },
-    {
-      "name": "Nooreldeen Ismail",
-      "role": "Member"
-    },
-    {
-      "name": "Peter Siegel",
-      "role": "Member"
-    },
-    {
-
-      "name": "Rafat Mansour",
-      "role": "Member"
-    },
-    {
-      "name": "Rashaunda Henderson",
-      "role": "Member"
-    },
-    {
-      "name": "Richard Snyder",
-      "role": "Member"
-    },
-    {
-      "name": "Rene Marklein",
-      "role": "Member"
-    },
-    {
-      "name": "Saber Zein Eldin",
-      "role": "Member"
-    },
-    {
-      "name": "Salah Obayya",
-      "role": "Member"
-    },
-    {
-      "name": "Samir Elghazaly",
-      "role": "Member"
-    },
-    {
-      "name": "Scott Barker",
-      "role": "Member"
-    },
-    {
-      "name": "Sedky Riad",
-      "role": "Member"
-    },
-    {
-      "name": "Tamer Abuelfadl",
-      "role": "Member"
-    },
-    {
-
-      "name": "Telesphor Kamgaing",
-      "role": "Member"
-    },
-    {
-      "name": "Thomas Kaiser",
-      "role": "Member"
-    },
-    {
-      "name": "Tim Lee",
-      "role": "Member"
-    },
-    {
-      "name": "Uche Wejinya",
-      "role": "Member"
-    },
-    {
-      "name": " Usha Varshne",
-      "role": "Member"
-    },
-    {
-      "name": "Victor F. Hanna",
-      "role": "Member"
-    },
-    {
-      "name": "Waleed Khalil",
-      "role": "Member"
-    },
-
+    }
   ]
-  let workshops = [
-    {
-      "name": "Prof. Diaa A. M. Khalil  ",
-      "role": "ASU"
-    },
-    {
 
-      "name": "Assoc. Prof.  Angie R. Eldamak",
-      "role": "GUC"
-    },
-  ]
   let women = [
     {
       "name": "Assoc. Prof. Bassant Abdelhamid",
@@ -485,13 +154,75 @@ router.get('/Committees', function(req, res, next) {
       "role": "GUC"
     },
   ]
-  res.render('Committees', {over: oversight,
+  let Organizing = [
+    {
+      "name": "Prof. Ahmed Mahdy",
+      "role": "ASU"
+    },
+    {
+      "name": "Prof. Frank Gunzer",
+      "role": "GUC"
+    },
+    {
+      "name": "Prof. Tallal El Shabrawy",
+      "role": "GUC"
+    },
+    {
+      "name": "Prof. Mohamed Ashour",
+      "role": "ASU"
+    },
+    {
+      "name": "Assoc. Prof. Amr Talaat",
+      "role": "GUC"
+    },
+    {
+      "name": "Assoc. Prof. Haitham Omran",
+      "role": "GUC"
+    },
+    {
+      "name": "Assoc. Prof. Mohamed Abdel Ghani",
+      "role": "ASU"
+    },
+    {
+      "name": "Assistant Prof. Minar Al-Aasser",
+      "role": "GUC"
+    },
+    {
+      "name": "Assistant Prof. Yasmine Abdellah",
+      "role": "GUC"
+    },
+  ]
+
+  let Assistants = [
+    {
+      "name": "Eng. Randa El Khosht",
+      "role": "ASU"
+    },
+    {
+      "name": "Eng. Randa El Khosht",
+      "role": "GUC"
+    },
+    {
+      "name": "Eng. Hadil Hesham Eissawy",
+      "role": "GUC"
+    },
+    {
+      "name": "Eng. Abdelrahman Moustafa Darwish",
+      "role": "GUC"
+    },
+    {
+      "name": "Eng. Sondos Tarek Mohamed El Zeiny",
+      "role": "GUC"
+    },
+  ]
+  res.render('Committees', {G_Secretary: G_Secretary,
     steering:steering,
-    organizing:organizing,
-    finance:finance,
-    technical:technical,
-    workshops:workshops,
-    women:women
+    TPC_Members:TPC_Members,
+    TPC_Chairs:TPC_Chairs,
+    Conference:Conference,
+    Assistants:Assistants,
+    women:women,
+    Organizing: Organizing
   });
 });
 
@@ -503,10 +234,8 @@ router.get('/Venue', function(req, res, next) {
   res.render('Venue');
 });
 
-
-
-router.get('/Registration', function(req, res, next) {
-  res.render('Registration');
+router.get('/Agenda', function(req, res, next) {
+  res.render('Agenda', {hour: 12, minute: 30});
 });
 
 module.exports = router;
