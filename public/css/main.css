@@ -175,7 +175,7 @@ body{
     display: flex;
     position: relative;
     z-index: 5;
-    min-height: 80vh;
+    min-height: 100vh;
 }
 .header-other .header-body{
     min-height: 20vh;
