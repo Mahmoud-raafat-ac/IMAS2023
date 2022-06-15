@@ -238,4 +238,8 @@ router.get('/Agenda', function(req, res, next) {
   res.render('Agenda', {hour: 12, minute: 30});
 });
 
+router.get('/Contact-Us', function(req, res, next) {
+  res.render('Contact-Us');
+});
+
 module.exports = router;

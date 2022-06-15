@@ -13,6 +13,14 @@
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 
     <title>IMAS 2023</title>
+
+    <style>
+      /* .footer{
+        position: fixed;
+        bottom: 0;
+      } */
+    </style>
+
 </head>
 <body>
   <div class="fixed-menu">
@@ -69,76 +77,71 @@
       </div>
       </button>
     </div>
+    <!-- main header -->
 
-
-    <!-- main -->
+    <!-- email -->
+    <div class="container">
+      <h3 class="title">Email - Us</h3>    
+      <div class="cards-list">
     
-    <!-- Brief About -->
-    <div class="container-fluid about">
-      <div class="container">
-        <h3 class="title">About International Microwave & Antennas Symposium</h3>
-        <div class="row">
-          <div class="col-sm-9">
-            <div class="content" data-aos="flip-up">
-              Provide an ideal place for the exchange of scientific and technical information, both at academic and industrial levels, with fosters collaboration and cooperation in the Microwaves, Antennas & Propagation domain both at Africa and global levels.
-              Provide an overview of the current state-of-the-art in Antennas, Propagation, Microwave circuits and Measurements, highlighting the latest developments and innovations required for future applications.
-              Contributions from industries, universities, research centers and other institutions.
-            </div>
+        <div class="card">
+          <div class="card_image" onclick="location.href='mailto:treasurer@ieeeimas2023.org';"> 
+            <img src="imgs/contact/treasurer.svg" /> </div>
+          <div class="card_title">
+            <p>Treasurer</p>
           </div>
         </div>
-        <div class="box-float d-sm-block d-none" data-aos="flip-right" data-aos-duration="1500"></div>
-      </div>
-    </div>
-    <!-- /About -->
-    <div class="container-fluid scope">
-      <div class="container">
-        <h3 class="title">Scope of the International Microwave & Antennas <br>Symposium Conference</h3>
-        <div class="row">
-          <div class="col-sm-6">
-            <div class="s-box">
-              <div class="hash">1</div>
-              <div class="content">
-                Theory and applications of microwave, millimeter-wave, terahertz and optical signals 
-              </div>
-            </div>
-            <div class="s-box">
-              <div class="hash">2</div>
-              <div class="content">
-                Antenna theory and applications 
-              </div>
-            </div>
-            <div class="s-box">
-              <div class="hash">3</div>
-              <div class="content">
-                Microwave photonics 
-              </div>
-            </div>
+        
+        <div class="card">
+          <div class="card_image" onclick="location.href='mailto:exhibition@ieeeimas2023.org';">
+            <img src="imgs/contact/exhibition.svg" />
           </div>
-          <div class="col-sm-6">
-            <div class="s-box">
-              <div class="hash">4</div>
-              <div class="content">
-                Guided-wave passive and active components 
-              </div>
-            </div>
-            <div class="s-box">
-              <div class="hash">5</div>
-              <div class="content">
-                High frequency Integrated circuits, sub-systems, and systems. 
-              </div>
-            </div>
-            <div class="s-box">
-              <div class="hash">6</div>
-              <div class="content">
-                Nano structures, Metamaterials and photonic crystals. 
-              </div>
-            </div>
+          <div class="card_title">
+            <p>Exhibition</p>
           </div>
         </div>
-      </div>
+        
+        <div class="card">
+          <div class="card_image" onclick="location.href='mailto:general.chair@ieeeimas2023.org';">
+            <img src="imgs/contact/general-chair.svg" />
+          </div>
+          <div class="card_title">
+            <p>General<br>Chair</p>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card_image" onclick="location.href='mailto:tpc.chair@ieeeimas2023.org';"> 
+            <img src="imgs/contact/tpc-chair.svg" /> 
+          </div>
+          <div class="card_title">
+            <p>TPC<br>Chair</p>
+          </div>
+        </div>
+        
+        <div class="card">
+          <div class="card_image" onclick="location.href='mailto:publication@ieeeimas2023.org';">
+            <img src="imgs/contact/publication.svg" />
+            </div>
+          <div class="card_title">
+            <p>Publication</p>
+          </div>
+        </div>
+        
+        <div class="card">
+          <div class="card_image" onclick="location.href='mailto:webmaster@ieeeimas2023.org';">
+            <img src="imgs/contact/webmaster.svg" />
+          </div>
+          <div class="card_title">
+            <p>Webmaster</p>
+          </div>
+        </div>
+                
+        </div>  
     </div>
-    <!-- /Scope -->
-    <!-- /main -->
+
+    <!-- email -->
+    
 
     <!-- Footer -->
     <div class="container-fluid footer">
@@ -160,7 +163,6 @@
       <script>
         AOS.init();
 
-        
         $('.close').click(function(){
           $('.fixed-menu').removeClass('d-block');
         });
@@ -168,7 +170,6 @@
         $('.to-links-box').click(function(){
           $('.fixed-menu').addClass('d-block');
         });
-
       </script>
   </body>
   </html>
