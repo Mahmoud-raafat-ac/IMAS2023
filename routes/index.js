@@ -44,7 +44,7 @@ router.get('/Committees', function(req, res, next) {
       "role": "Former Chair"
     },
     {
-      "name": "Prof. Ayman El-Tager",
+      "name": "Prof. Hany Hammad",
       "role": "Former Chair"
     }
   ]
