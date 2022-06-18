@@ -2,19 +2,19 @@ var express = require('express');
 var router = express.Router();
 
 /* GET home page. */
-router.get('/', function(req, res, next) {
+router.get('/', function (req, res, next) {
   res.render('Home');
 });
 
-router.get('/About', function(req, res, next) {
+router.get('/About', function (req, res, next) {
   res.render('About');
 });
 
-router.get('/Topics', function(req, res, next) {
+router.get('/Topics', function (req, res, next) {
   res.render('Topics');
 });
 
-router.get('/Committees', function(req, res, next) {
+router.get('/Committees', function (req, res, next) {
   let steering = [
     {
       "name": "Prof. Samir El-Ghazali ",
@@ -38,7 +38,7 @@ router.get('/Committees', function(req, res, next) {
     }
   ]
 
-  let Conference  = [
+  let Conference = [
     {
       "name": "Prof. Ayman El-Tager",
       "role": "Former Chair"
@@ -48,7 +48,7 @@ router.get('/Committees', function(req, res, next) {
       "role": "Former Chair"
     }
   ]
-  
+
   let TPC_Chairs = [
     {
       "name": "Prof. Hadia El-Hennawy",
@@ -131,7 +131,7 @@ router.get('/Committees', function(req, res, next) {
     },
   ]
 
-  let G_Secretary  = [
+  let G_Secretary = [
     {
       "name": "Assoc. Prof. Hussein Kotb",
       "role": "TPC CoChair (AP)"
@@ -215,30 +215,31 @@ router.get('/Committees', function(req, res, next) {
       "role": "GUC"
     },
   ]
-  res.render('Committees', {G_Secretary: G_Secretary,
-    steering:steering,
-    TPC_Members:TPC_Members,
-    TPC_Chairs:TPC_Chairs,
-    Conference:Conference,
-    Assistants:Assistants,
-    women:women,
+  res.render('Committees', {
+    G_Secretary: G_Secretary,
+    steering: steering,
+    TPC_Members: TPC_Members,
+    TPC_Chairs: TPC_Chairs,
+    Conference: Conference,
+    Assistants: Assistants,
+    women: women,
     Organizing: Organizing
   });
 });
 
-router.get('/Sponsers', function(req, res, next) {
+router.get('/Sponsers', function (req, res, next) {
   res.render('Sponsers');
 });
 
-router.get('/Venue', function(req, res, next) {
+router.get('/Venue', function (req, res, next) {
   res.render('Venue');
 });
 
-router.get('/Agenda', function(req, res, next) {
-  res.render('Agenda', {hour: 12, minute: 30});
+router.get('/Agenda', function (req, res, next) {
+  res.render('Agenda', { hour: 12, minute: 30 });
 });
 
-router.get('/Contact-Us', function(req, res, next) {
+router.get('/Contact-Us', function (req, res, next) {
   res.render('Contact-Us');
 });
 
