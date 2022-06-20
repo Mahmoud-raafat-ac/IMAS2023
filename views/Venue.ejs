@@ -130,6 +130,70 @@
       </div>
 
       <h3 class="title">Attractions</h3>
+      <div class="options">
+        <div class="option active"
+          style="--optionBackground:url('/imgs/country/cairo-airport.jpg');">
+          <div class="bg_shadow"></div>
+          <div class="label">
+            <div class="info">
+              <div class="main">Cairo Airport</div>
+              <div class="sub">30 min with a car</div>
+            </div>
+          </div>
+        </div>
+        <div class="option"
+          style="--optionBackground:url('/imgs/country/khan-el-khalili.jpg');">
+          <div class="bg_shadow"></div>
+          <div class="label">
+            <div class="info">
+              <div class="main">Khan El-Khalili</div>
+              <div class="sub">25 min with a car</div>
+            </div>
+          </div>
+        </div>
+        <div class="option"
+          style="--optionBackground:url('/imgs/country/citadel.jpg');">
+          <div class="bg_shadow"></div>
+          <div class="label">
+            <div class="info">
+              <div class="main">Salah el din al ayouby citadel</div>
+              <div class="sub">30 min with a car</div>
+            </div>
+          </div>
+        </div>
+        <div class="option"
+          style="--optionBackground:url('/imgs/country/egyptian-musuem.jpg');">
+          <div class="bg_shadow"></div>
+          <div class="label">
+            <div class="info">
+              <div class="main">Egyptian Museum</div>
+              <div class="sub">33 min with a car</div>
+            </div>
+          </div>
+        </div>
+        <div class="option"
+          style="--optionBackground:url('/imgs/country/pyramids.jpg');">
+          <div class="bg_shadow"></div>
+          <div class="label">
+            <div class="info">
+              <div class="main">Giza Pyramids</div>
+              <div class="sub">40 min with a car</div>
+            </div>
+          </div>
+        </div>
+        <div class="option"
+          style="--optionBackground:url('/imgs/slideshow/musuem.jpg');">
+          <div class="bg_shadow"></div>
+          <div class="label">
+            <div class="info">
+              <div class="main">The National Museum of Egyptian Civilization</div>
+              <div class="sub">23 min with a car</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <p class="note">Note: The time calculated is calculated from GUC, We recommend using UBER as means of transport</p>
 
     </div>
   </div>
@@ -163,6 +227,11 @@
 
     $('.to-links-box').click(function () {
       $('.fixed-menu').addClass('d-block');
+    });
+
+    $(".option").click(function () {
+      $(".option").removeClass("active");
+      $(this).addClass("active");
     });
   </script>
 </body>
