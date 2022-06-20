@@ -677,7 +677,7 @@ body{
 }
 
 /* ------------------------------- Contact-Us 'start' ------------------------------------------- */
-.cards-list {
+.contacts-list {
     z-index: 0;
     width: 100%;
     display: flex;
@@ -685,7 +685,7 @@ body{
     flex-wrap: wrap;
     margin-bottom: 25vh;
 }
-.card {
+.contact {
     margin: 50px 50px;
     width: 100px;
     height: 100px;
@@ -695,25 +695,25 @@ body{
     transition: 0.4s;
     background: linear-gradient(144deg, #ffffff97 0%, #d88912cf 23%, #040404d8 100%);
 }
-.card .card_image {
+.contact .contact_image {
     width: inherit;
     height: inherit;
     border-radius: 100px;
 } 
-.card .card_image img {
+.contact .contact_image img {
     width: inherit;
     height: inherit;
     border-radius: 100px;
     object-fit: cover;
 }
-.card .card_title {
+.contact .contact_title {
     text-align: center;
     border-radius: 0px 0px 40px 40px;
     font-weight: 400;
     font-size: 15px;
     margin-top: 6px;
 }
-.card:hover {
+.contact:hover {
     transform: scale(0.9, 0.9);
     box-shadow: 5px 5px 30px 15px rgba(0,0,0,0.25), -5px -5px 30px 15px rgba(0,0,0,0.22);
 } 
