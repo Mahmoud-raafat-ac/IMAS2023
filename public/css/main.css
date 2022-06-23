@@ -112,14 +112,14 @@ body {
 }
 
 .text-header-new {
-    padding: 10vh 0 0 100px;
+    padding: 10vh 50px 0 50px;
     color: #fff;
 }
 
 .text-header-new .text-header {
     font-weight: bold;
     font-size: 3em;
-    width: 60%;
+    width: 100%;
     display: inline-block;
 }
 
@@ -177,6 +177,74 @@ body {
     float: none;
 }
 
+/* 
+    Announcement
+*/
+.announcement{
+    padding: 15vh 0 0 0;
+}
+.announcement .blurred-bg{
+    backdrop-filter: blur(10px);
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 15px;
+    border-radius: 10px;
+    color:#fff;
+}
+
+.announcement a.btn-submit-paper {
+    position: relative;
+    color: #ffc107;
+    text-decoration: none;
+    font-size: 1em;
+    display: inline-block;
+    font-family: Montserrat;
+    text-transform: uppercase;
+    padding: 0.5em 2em;
+    border: 2px solid #ffc107;
+    transition: 0.02s 0.2s cubic-bezier(0.1, 0, 0.1, 1);
+  }
+  .announcement a.btn-submit-paper::before {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 100%;
+    bottom: 0;
+    background: #ffc107;
+    transition: 0.3s 0.2s cubic-bezier(0.1, 0, 0.1, 1), left 0.3s cubic-bezier(0.1, 0, 0.1, 1);
+    z-index: -1;
+  }
+  .announcement a.btn-submit-paper::after {
+    content: "";
+    display: inline-block;
+    background-image: url("https://cdn-icons-png.flaticon.com/128/109/109617.png");
+    position: absolute;
+    top: 0;
+    left: calc(100% - 3em);
+    right: 3em;
+    bottom: 0;
+    background-size: 1.5em;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: right 0.3s cubic-bezier(0.1, 0, 0.1, 1);
+  }
+  .announcement a.btn-submit-paper:hover {
+    padding: 0.5em 3.5em 0.5em 0.5em;
+  }
+  .announcement a.btn-submit-paper:hover::before {
+    left: calc(100% - 3em);
+    right: 0;
+    transition: 0.3s cubic-bezier(0.1, 0, 0.1, 1), left 0.3s 0.2s cubic-bezier(0.1, 0, 0.1, 1);
+  }
+  .announcement a.btn-submit-paper:hover::after {
+    right: 0;
+    transition: right 0.3s 0.2s cubic-bezier(0.1, 0, 0.1, 1);
+  }
+
+  .announcement h6{
+    color: #aaa;
+  }
 /* Main section */
 
 
@@ -299,6 +367,9 @@ h3.title {
 }
 
 @media only screen and (max-width: 575px) {
+    .announcement{
+        padding: 0 0 10vh 0;
+    }
     .single-timeline-area {
         padding-left: 100px;
     }
@@ -313,7 +384,7 @@ h3.title {
     }
 
     .header-body {
-        height: 113vh;
+        min-height: 113vh;
     }
 
     .header-other .header-body {
@@ -984,3 +1055,4 @@ h3.title {
 }
 
 /* ------------------------------- Contact-Us 'end' ------------------------------------------- */
+
