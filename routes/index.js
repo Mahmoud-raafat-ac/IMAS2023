@@ -199,7 +199,7 @@ router.get('/Committees', function (req, res, next) {
       "role": "ASU"
     },
     {
-      "name": "Eng. Randa El Khosht",
+      "name": "Eng. Maha El feshawy",
       "role": "GUC"
     },
     {
